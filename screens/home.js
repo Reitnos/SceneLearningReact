@@ -4,6 +4,7 @@ import {StyleSheet,View,Text, Button,Modal, FlatList, TouchableOpacity} from 're
 import {globalStyles} from "../styles/global";
 import Card from "../shared/card";
 import {MaterialIcons} from "@expo/vector-icons";
+import ReviewForm from "./reviewForm";
 
 
 export default function Home({navigation}){
@@ -46,10 +47,10 @@ export default function Home({navigation}){
             <MaterialIcons 
             name = "close"
             size = {24}
-            tyle = {{...styles.modalToggle, ...styles.modalClose}}
+            style = {{...styles.modalToggle, ...styles.modalClose}}
             onPress = {() => setModalOpen(false)}
           />
-
+            <ReviewForm />
             </View>
         </Modal>
 
@@ -73,7 +74,7 @@ export default function Home({navigation}){
            />
            
 
-            {/* <Button title = "go to review details" onPress = {pressHandler} />*/}
+          
         </View>
     )
 }

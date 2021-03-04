@@ -6,15 +6,11 @@ import Card from "../shared/card";
 
 
 export default function ReviewDetails({navigation}){
-//     const pressHandler = () => {
-//             navigation.goBack();
-      
-//    }
+
 const rating = navigation.getParam("rating");
     return(
         <View style = {globalStyles.container}>
-            {/* <Text style = {globalStyles.container}> ReviewDetails Screen </Text>
-            <Button title = "quit this scene" onPress = {pressHandler} /> */}
+         
             <Card>
             <Text> {navigation.getParam("title")} </Text>
             <Text> {navigation.getParam("body")} </Text>
